@@ -1,6 +1,0 @@
-# TypeScript
-
-## Métodos Getters e Setters
-
-Um método get eu uso se eu preciso executar uma ação antes de retornar um atributo.
-O método set eu uso se eu preciso executar algo antes de definir o valor de um atributo
