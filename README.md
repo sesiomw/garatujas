@@ -7,7 +7,7 @@ HTML é uma linguagem de marcação com o principal objetivo de mostrar informa�
 Sempre deixe o mais acessível possível, pessoas com baixa visão, com mobilidade reduzida, cegos que utilizam
 leitores de tela, basicamente todas as pessoas com necessidades específicas precisam ter acesso a essas informações.
 
-# Links que considero úteis
+## Links que considero úteis
 
 https://css-tricks.com/
 https://developer.mozilla.org/en-US/
