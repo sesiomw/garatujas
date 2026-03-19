@@ -7,6 +7,13 @@ HTML é uma linguagem de marcação com o principal objetivo de mostrar informa�
 Sempre deixe o mais acessível possível, pessoas com baixa visão, com mobilidade reduzida, cegos que utilizam
 leitores de tela, basicamente todas as pessoas com necessidades específicas precisam ter acesso a essas informações.
 
+# TypeScript
+
+## Métodos Getters e Setters
+
+Um método get eu uso se eu preciso executar uma ação antes de retornar um atributo.
+O método set eu uso se eu preciso executar algo antes de definir o valor de um atributo
+
 ## Links que considero úteis
 
 https://css-tricks.com/
