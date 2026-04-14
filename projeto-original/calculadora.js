@@ -10,7 +10,6 @@ let numeroAnterior;
 
 const operacaoPendente = () => operador !== undefined;
 
-// Realiza o cálculo usando eval, que é uma função perigosa e deve ser usada com cuidado.
 const calcular = () => {
     if (operacaoPendente()) {
         const numeroAtual = parseFloat(display.textContent.replace('.','').replace(',', '.'));
@@ -22,10 +21,10 @@ const calcular = () => {
 
 const atualizarDisplay = (texto) => {
     if (novoNumero) {
-        display.textContent = texto.toLocaleString('pt-BR');
+        display.textContent = texto.toLocaleString('BR');
         novoNumero = false;
     } else {
-        display.textContent += texto.toLocaleString('pt-BR');
+        display.textContent += texto.toLocaleString('BR');
     }
     document.querySelector('#igual').focus();
 };
@@ -53,7 +52,7 @@ document.getElementById('igual').addEventListener('click', ativarIgual);
 
 const limparDisplay = () => (display.textContent = '');
 document
-    .getElementById('limpar-tela')
+    .getElementById('limparDisplay')
     .addEventListener('click', limparDisplay);
 
 const limparCalculo = () => {
@@ -63,7 +62,7 @@ const limparCalculo = () => {
     numeroAnterior = undefined;
 };
 document
-    .getElementById('limpar-calculo')
+    .getElementById('limparCalculo')
     .addEventListener('click', limparCalculo);
 
 const removerUltimoNumero = () =>
@@ -76,7 +75,7 @@ const inverterSinal = () => {
     novoNumero = true;
     atualizarDisplay(display.textContent * -1);
 };
-document.getElementById('inverter-sinal').addEventListener('click', inverterSinal);
+document.getElementById('inverter').addEventListener('click', inverterSinal);
 
 const existeDecimal = () => display.textContent.indexOf(',') !== -1;
 const existeValor = () => display.textContent.length > 0;
@@ -91,27 +90,26 @@ const inserirDecimal = () => {
 };
 document.getElementById('decimal').addEventListener('click', inserirDecimal);
 
-// Mapeamento de teclas para botões da calculadora
 const mapaTeclado = {
-    0: 'tecla-0',
-    1: 'tecla-1',
-    2: 'tecla-2',
-    3: 'tecla-3',
-    4: 'tecla-4',
-    5: 'tecla-5',
-    6: 'tecla-6',
-    7: 'tecla-7',
-    8: 'tecla-8',
-    9: 'tecla-9',
-    '/': 'operador-divisao',
-    '*': 'operador-multiplicacao',
-    '-': 'operador-subtracao',
-    '+': 'operador-adicao',
+    0: 'tecla0',
+    1: 'tecla1',
+    2: 'tecla2',
+    3: 'tecla3',
+    4: 'tecla4',
+    5: 'tecla5',
+    6: 'tecla6',
+    7: 'tecla7',
+    8: 'tecla8',
+    9: 'tecla9',
+    '/': 'operadorDividir',
+    '*': 'operadorMultiplicar',
+    '-': 'operadorSubtrair',
+    '+': 'operadorAdicionar',
     '=': 'igual',
     Enter: 'igual',
     Backspace: 'backspace',
-    c: 'limpar-tela',
-    Escape: 'limpar-calculo',
+    c: 'limparDisplay',
+    Escape: 'limparCalculo',
     ',': 'decimal',
 };
 
