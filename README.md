@@ -52,6 +52,10 @@ consulta em ocultar detalhes internos de uma classe e expor apenas o
 necessário para o uso externo.
 é feito utilizando modificadores de acesso como private, protected e public
 
+## Pergunta (por obrigação)
+
+Não entendi muito bem o funcionamento da palavra chave .super
+
 ## Links que considero úteis
 
 https://css-tricks.com/
